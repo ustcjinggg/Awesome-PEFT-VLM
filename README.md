@@ -15,16 +15,16 @@ Please feel free to pull requests or open an issue to add papers.
 
 ### iccv2023
 
-| Title | 方法 | 模型 | 实验对象 |
+| Title | 方法描述 | 基线模型 | 实验对象 |
 |:-------------------------------------------------------------------------------------------------------------------------------- |:-----:|:-------:|:----:|
 | Revisiting the Parameter Efficiency of Adapters from the Perspective of Precision Redundancy |  对lora和adaformer的参数做量化，进一步减少参数量  | 纯视觉VIT-B模型  | VTAB分类数据集   |
-| VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control |     |   多模态Bart-base,T5-base   |  VQA, GQA, NLVR, COCO Cap 图文任务 |
-| [Learning Causal Representation for Training Cross-Domain Pose Estimator via Generative Interventions](https://openaccess.thecvf.com/content/ICCV2021/papers/Zhang_Learning_Causal_Representation_for_Training_Cross-Domain_Pose_Estimator_via_Generative_ICCV_2021_paper.pdf) | ICCV | `IT/CR`     | -  |
+| VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control |   微调语言部分的block，在adapter基础上增加粒度控制的G作为权重激活特征  |   多模态Bart-base/T5-base + CLIP; 对比VL-Adapter   |  VQA, GQA, NLVR, COCO Cap 图文任务 |
+
 
 ### cvpr2022
 | Title | 方法 | 模型 | 实验对象 |
 |:-------------------------------------------------------------------------------------------------------------------------------- |:-----:|:-------:|:----:|
-| Vl-adapter: Parameter-efficient transfer learning for vision-and-language tasks. |  对lora和adaformer的参数做量化，进一步减少参数量  | 多模态  |  VQA, GQA, NLVR, COCO Cap 图文任务   |
+| Vl-adapter: Parameter-efficient transfer learning for vision-and-language tasks. |  微调语言部分的block，设计下采样+上采样形式的方案  | 多模态Bart-base/T5-base + CLIP  |  VQA, GQA, NLVR, COCO Cap 图文任务   |
 
 
 
