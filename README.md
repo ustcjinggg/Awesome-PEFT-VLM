@@ -42,6 +42,8 @@ Please feel free to pull requests or open an issue to add papers.
 ### Language Only
 | Title | 发表情况 | 方法描述 | 基线模型 | 实验对象 |
 |:--------------- |:-------:|:----------:|:-------:|:-----------:|
+| LoRA: Low-rank adaptation of large language models| ICLR2022(1k+引) | 用低秩逼近的方法拟合模型微调过程中W的变化 | DeBERTa, GPT-2, GPT-3 | WikiSQL,MultiNLI等 |
+| BitFit: Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models | ACL2022(360引) | 仅微调bias项 | Bert 模型 | GLUE benchmark |
 | Parameter-efficient Multi-task Fine-tuning for Transformers via Shared Hypernetworks | ACL2021(150引) | - | T5-base | GLUE benchmark |
 
 
