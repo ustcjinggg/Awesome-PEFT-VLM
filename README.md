@@ -8,11 +8,10 @@ Please feel free to pull requests or open an issue to add papers.
 
 ## Table of Contents
 
-- [Type of PEFT for VLM]
-- [问答型多模态任务](#VLM-QA)
-- [Grounding多模态任务](#VLM-G)
-- [纯视觉分类](#vision only)
-
+- Type of PEFT for VLM
+- 问答型多模态任务
+- Grounding多模态任务
+- 纯视觉分类
   
 ### VLM-G
 | Title | 发表情况 | 方法描述 | 基线模型 | 实验对象 |
@@ -24,7 +23,7 @@ Please feel free to pull requests or open an issue to add papers.
 |:--------------- |:-------:|:----------:|:-------:|:-----------:|
 | Vl-adapter: Parameter-efficient transfer learning for vision-and-language tasks. | ICCV2023 | 微调语言部分的block，设计下采样+上采样形式的方案  | 多模态Bart-base/T5-base + CLIP  |  VQA, GQA, NLVR, COCO Cap 图文任务   |
 
-### vision only
+### Vision only
 
 | Title | 发表情况 | 方法描述 | 基线模型 | 实验对象 |
 |:--------------- |:-------:|:----------:|:-------:|:-----------:|
