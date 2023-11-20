@@ -26,7 +26,7 @@ Please feel free to pull requests or open an issue to add papers.
 |:--------------- |:--------:|:----------------:|:-------:|:-----------:|
 | Vl-adapter: Parameter-efficient transfer learning for vision-and-language tasks. | ICCV2023 | 改造文本部分的block，设计下采样+上采样形式的方案设计adapter  | 多模态Bart-base/T5-base + CLIP  |  VQA, GQA, NLVR, COCO Cap 图文任务   |
 | VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control | CVPR2022 | 改造文本部分的block，在adapter基础上增加粒度控制的G作为权重对特征激活  |  多模态Bart-base/T5-base + CLIP; 对比VL-Adapter |  VQA, GQA, NLVR, COCO Cap 图文任务 |
-|MixPHM: Redundancy-Aware Parameter-Efficient Tuning for Low-Resource Visual Question Answering| CVPR2023 |   |   |  VQAv2, GQA, OK-VAQ图文任务  |
+|MixPHM: Redundancy-Aware Parameter-Efficient Tuning for Low-Resource Visual Question Answering| CVPR2023 | 混合专家模型结合lora利用更多参数微调 | T5,X-VLM,BLIP,OFA-B  |  VQAv2, GQA, OK-VAQ图文任务  |
 | LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning | NIPS2022 | 设计侧边网络，由本身参数初始化，微调过程中固定主干网络并且无需其中梯度，节省50%以上显存 | T5, CLIP-T5 | GLUE NLP任务; VQA, GQA, NLVR, COCO Cap 图文任务 |
 | Tem-adapter: Adapting Image-Text Pretraining for Video Question Answer |  ICCV2023 | 在视觉和文本编码器对齐处，使用transformer层进行对齐 | CLIP-ViT-B32模型 | SUTD-TrafficQA (Video) |
 
