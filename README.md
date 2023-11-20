@@ -36,8 +36,11 @@ Please feel free to pull requests or open an issue to add papers.
 | Visual Prompt Tuning | ECCV2022(455引) |  固定模型，在每一层都增加可学习的prompt作为额外token进行训练  |  ViT-B, ViT-L | VTAB分类数据集 |
 | Revisiting the Parameter Efficiency of Adapters from the Perspective of Precision Redundancy | ICCV2023 | 对lora和adaformer的参数做量化，进一步减少参数量  | 纯视觉VIT-B模型 | VTAB分类数据集 |
 | Sensitivity-Aware Visual Parameter-Efficient Fine-Tuning | ICCV2023 | 利用梯度分析不同层的参数敏感性，依次使用LoRA | 纯视觉VIT-B模型 | VTAB分类数据集 |
+| Visual Query Tuning: Towards Effective Usage of Intermediate Representations for Parameter and Memory Efficient Transfer Learning | CVPR2023 |   相比于VPT，prompt只和query联系 |  ViT-B/16  | VTAB-1k 分类数据集 |
 | A Unified Continual Learning Framework with General Parameter-Efficient Tuning | ICCV2023| 叠加使用lora,prefix,adapeter设计了PET模块 | 纯视觉VIT-B |  Cifar100, ImageNetR分类数据集 |
 | DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning | ICCV2023 |  打开bias, bn, class token, 加入可学习γ用作block权重 |  Diffusion Transformer(DiT) | Food101等细粒度数据集做生成 |
+
+
 
 
 ### Language Only
