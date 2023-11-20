@@ -26,6 +26,7 @@ Please feel free to pull requests or open an issue to add papers.
 |:--------------- |:--------:|:----------------:|:-------:|:-----------:|
 | Vl-adapter: Parameter-efficient transfer learning for vision-and-language tasks. | ICCV2023 | 改造文本部分的block，设计下采样+上采样形式的方案设计adapter  | 多模态Bart-base/T5-base + CLIP  |  VQA, GQA, NLVR, COCO Cap 图文任务   |
 | VL-PET: Vision-and-Language Parameter-Efficient Tuning via Granularity Control | CVPR2022 | 改造文本部分的block，在adapter基础上增加粒度控制的G作为权重对特征激活  |  多模态Bart-base/T5-base + CLIP; 对比VL-Adapter |  VQA, GQA, NLVR, COCO Cap 图文任务 |
+|MixPHM: Redundancy-Aware Parameter-Efficient Tuning for Low-Resource Visual Question Answering| CVPR2023 |   |   |  VQAv2, GQA, OK-VAQ图文任务  |
 | LST: Ladder Side-Tuning for Parameter and Memory Efficient Transfer Learning | NIPS2022 | 设计侧边网络，由本身参数初始化，微调过程中固定主干网络并且无需其中梯度，节省50%以上显存 | T5, CLIP-T5 | GLUE NLP任务; VQA, GQA, NLVR, COCO Cap 图文任务 |
 | Tem-adapter: Adapting Image-Text Pretraining for Video Question Answer |  ICCV2023 | 在视觉和文本编码器对齐处，使用transformer层进行对齐 | CLIP-ViT-B32模型 | SUTD-TrafficQA (Video) |
 
@@ -39,6 +40,7 @@ Please feel free to pull requests or open an issue to add papers.
 | Visual Query Tuning: Towards Effective Usage of Intermediate Representations for Parameter and Memory Efficient Transfer Learning | CVPR2023 |   相比于VPT，prompt只和query联系 |  ViT-B/16  | VTAB-1k 分类数据集 |
 | A Unified Continual Learning Framework with General Parameter-Efficient Tuning | ICCV2023| 叠加使用lora,prefix,adapeter设计了PET模块 | 纯视觉VIT-B |  Cifar100, ImageNetR分类数据集 |
 | DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning | ICCV2023 |  打开bias, bn, class token, 加入可学习γ用作block权重 |  Diffusion Transformer(DiT) | Food101等细粒度数据集做生成 |
+| 1% VS 100%: Parameter-Efficient Low Rank Adapter for Dense Predictions | CVPR2023 | 将lora_A和lora-B进一步低秩分解并组合 | Swin，对比Adapter | ADE20k分割，COCO检测 |
 
 
 
